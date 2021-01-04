@@ -8,21 +8,23 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>Seattle, WA, July 2018</p>
+    <p> Seattle, WA, July 2018 </p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi :) I am a research scientist at Naver AI Lab (We're hiring!). I am currently building a research team around HCI x AI, exploring novel techniques in computational interaction powered by AI technologies. If you're passionate about making AI technologies useful for people by building novel interaction techniques, and/or if you are excited about building AI technologies from human-centered perspectives, please reach out to me!
+Hi :) I am a research scientist at [Naver AI Lab]() (We're hiring!). I am currently building a research team around HCI x AI, exploring novel techniques in computational interaction powered by AI technologies. If you're passionate about making AI technologies useful for people by building novel interaction techniques, and/or if you are excited about building AI technologies from human-centered perspectives, please reach out to me!
 
-I have a PhD in Computer Science from [KAIST](http://www.kaist.ac.kr). During my PhD, I was advised by [Juho Kim](http://juhokim.com) in the [KIXLAB](http://kixlab.org). Here's my CV (pdf).
+I'm also recruiting interns for 2021 Summer. If you're interested in 1) modeling [conversational interactions](), 2) [massive scale language models]() like GPT-3, and 3) modeling users as [computationally rational agents](), please reach out to me as well.
+
+I have a PhD in Computer Science from [KAIST](http://www.kaist.ac.kr){:target="\_blank"}. During my PhD, I was advised by [Juho Kim](http://juhokim.com){:target="\_blank"} in the [KIXLAB](http://kixlab.org){:target="\_blank"}.
 
 <!-- In the past,
-I studied Computer Science, Financial Engineering from KAIST, Finance from Simon Business School @ University of Rochester, and Statistics from Rutgers University. I have worked at an Hedge Fund in NYC trying to beat the market by relentlessly crunching numbers prior to coming (back) to KAIST. I've spent two years in the reinforcement learning (as a subfield of machine learning) research group at KAIST as a Ph.D student before joining KIXLAB (the KAIST Interaction Lab).
+I studied Computer Science, Financial Engineering from KAIST, Finance from Simon Business School @ University of Rochester, and Statistics from Rutgers University. I have worked at an Hedge Fund in NYC trying to beat the market by relentlessly crunching numbers prior to coming (back) to KAIST. I've spent two years in the reinforcement learning (as a subfield of machine learning) research group at KAIST as a Ph.D student before joining KIXLAB (the KAIST Interaction Lab). -->
 
-I taught lab sessions for the mandatory Introduction to Programming course at KAIST from 2015-2018 as a Head TA. I enjoyed working with 40 TAs and interacting with 450-500 students each semester. -->
+<!-- I taught lab sessions for the mandatory Introduction to Programming course at KAIST from 2015-2018 as a Head TA. I enjoyed working with 40 TAs and interacting with 450-500 students each semester. -->
 
 <!-- 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
