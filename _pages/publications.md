@@ -10,25 +10,25 @@ nav: true
 
 <div>
 <h3>Conference Papers (Selected)</h3>
-<div class="publications">
+  <div class="publications">
 
-{% for y in page.fullyears %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
+  {% for y in page.fullyears %}
+    <h2 class="year">{{y}}</h2>
+    {% bibliography -f papers -q @*[year={{y}}]* %}
+  {% endfor %}
 
+  </div>
 </div>
-</div>
+
 <br>
-
 
 <div>
 <h3>Posters, Demos, Workshop Papers</h3>
-<div class="publications">
-{% for y in page.posteryears %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f posters -q @*[year={{y}}]* %}
-{% endfor %}
+  <div class="publications">
+  {% for y in page.posteryears %}
+    <h2 class="year">{{y}}</h2>
+    {% bibliography -f posters -q @*[year={{y}}]* %}
+  {% endfor %}
 
-</div>
+  </div>
 </div>
