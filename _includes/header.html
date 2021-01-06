@@ -31,9 +31,28 @@
               {% endif %}
             </a>
           </li>
-          {% if site.blog_name %}
+          
+          <!-- Publication -->
+          <li class="nav-item {% if page.url contains 'publications' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/publications/' | relative_url }}">
+              publications
+              {% if page.title == "publications" %}
+              <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
 
-          <!-- Other pages -->
+
+          <!-- Misc. -->
+          <li class="nav-item {% if page.url contains 'misc' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/misc/' | relative_url }}">
+              misc.
+              {% if page.title == "misc" %}
+              <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+          <!-- Other pages
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
@@ -46,13 +65,14 @@
               </a>
           </li>
           {% endif %}
-          {% endfor %}
+          {% endfor %} -->
           <!-- CV -->
           <li class="nav-item">
             <a class="nav-link" href="/assets/pdf/CV_MinsukChang_2020dec.pdf" target="_blank">
               cv
             </a>
           </li>
+          {% if site.blog_name %}
           <!-- Blog -->
           <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
             <a class="nav-link" href="{{ '/blog/' | relative_url }}">
@@ -63,6 +83,7 @@
             </a>
           </li>
           {% endif %}
+          <!-- dark mode icon-->
           {% if site.enable_darkmode %}
             <div class = "toggle-container">
               <a id = "light-toggle">

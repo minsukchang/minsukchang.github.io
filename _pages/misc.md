@@ -1,8 +1,8 @@
 ---
 layout: page
 title: services
-permalink: /services/
-description: A growing list of academic services
+permalink: /misc/
+description: A growing list of academic services and other activities
 nav: true
 ---
 
