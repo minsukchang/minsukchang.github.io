@@ -65,7 +65,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: #al-folio # put your disqus shortname
+disqus_shortname: "minsukchang" #al-folio # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -80,11 +80,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  # blog:
-  #   defaults:
-  #     layout: post
-  #   output: true
-  #   permalink: /blog/:path/
 
 news_limit: 5
 
