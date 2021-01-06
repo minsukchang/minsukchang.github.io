@@ -27,27 +27,27 @@
           {% endif %}
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.first}} {{author.last}}</em>,
+            <strong><span style="color:#2db400">{{author.first}} {{author.last}}</span></strong>,
             {% else %}
               {{author.first}} {{author.last}},
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em> {{author.first}} {{author.last}}</em>,
+              <strong><span style="color:#2db400">{{author.first}} {{author.last}}</span></strong>,
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
+                  <a href="{{site.data.coauthors[{{author.first}} {{author.last}}].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
                 {% else %}
                   {{author.first}} {{author.last}},
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.first}} {{author.last}}</em>
+              <strong><span style="color:#2db400">{{author.first}} {{author.last}}</span></strong>
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                  and <a href="{{site.data.coauthors[{{author.first}} {{author.last}}].url}}" target="_blank">{{author.first}} {{author.last}}</a>
                 {% else %}
                   and {{author.first}} {{author.last}}
                 {% endif %}
@@ -63,9 +63,9 @@
       {% elsif entry.type == "inproceedings" %}
         <em>In {{entry.booktitle}}</em>
       {% endif %}
-      <!-- {% if entry.year %}
-        {{entry.year}}
-      {% endif %} -->
+      {% if entry.year == "2021" %}
+        ... to appear ... 
+      {% endif %}
       </div>
     {% endif %}
 

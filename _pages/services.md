@@ -30,7 +30,7 @@ nav: true
 #### Student Volunteer
 - CHI 2017
 - UIST 2017, 2018
-- ICML 2020 -->
+- ICML 2020
   
 
 <br/>
