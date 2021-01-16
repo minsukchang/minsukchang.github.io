@@ -13,15 +13,15 @@ nav: true
 - ISS 2019 Video Chair
   
 #### Program Committee
-- Visualization Meets AI 2021
+- Viz Meets AI 2021
 - CSCW 2021
 - GI 2020
 - WWW 2020, 2021
-- CHI 2019 LBW
+- CHI 2019 LBW, 2021 SRC
 
 
 #### Reviewer
-- CHI 2017, 2018, 2019, 2020, 2021
+- CHI 2017, 2018, 2019, 2020, 2021 
 - CSCW 2018, 2019, 2020 (Outstanding Review)
 - UIST 2017, 2018, 2020
 - MobileHCI 2019
@@ -32,7 +32,6 @@ nav: true
 - UIST 2017, 2018
 - ICML 2020
   
-
 <br/>
 <br/>
 <br/>
