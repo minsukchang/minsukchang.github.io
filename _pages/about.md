@@ -15,9 +15,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi :) I am a research scientist at [Naver AI Lab](). I am currently building a research team around HCI x AI, exploring novel techniques in computational interaction powered by AI technologies. My research focuses on making AI technologies useful for people by building novel interaction techniques.
+Hi :) I am a research scientist at [Naver AI Lab](). I am currently running a research team at the intersection of HCI and AI, exploring novel techniques in computational interaction powered by AI technologies. We build AI powered systems with users in the loop, and we evaluate these systems with real user populations. 
 
-I'm recruiting interns for 2021 Summer. If you're interested in 1) modeling [conversational interactions](), 2)[massive scale language models]() like GPT-3, and 3) modeling users as [computationally rational agents](), please reach out to me as well.
+I'm recruiting interns for 2021 Summer. If you're interested in 1) modeling [conversational interactions](), 2) [massive scale language models]() like GPT-3, and 3) modeling users as [computationally rational agents](), please reach out to me as well.
 
 I have a PhD in Computer Science from [KAIST](http://www.kaist.ac.kr){:target="\_blank"}. During my PhD, I was advised by [Juho Kim](http://juhokim.com){:target="\_blank"} in the [KIXLAB](http://kixlab.org){:target="\_blank"}.
 
