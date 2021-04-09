@@ -27,6 +27,7 @@ nav: true
 - UIST 2017, 2018, 2020
 - MobileHCI 2019
 - IMWUT 2020 (Outstanding Review)
+- Creativity and Cogntion 2021
 
 #### Student Volunteer
 - CHI 2017
@@ -39,6 +40,7 @@ nav: true
 
 
 ## invited talks and panels
+- Mar 2021 : Invited to give a talk on <a href="https://cs.yonsei.ac.kr/cs/board/notice.do?mode=view&articleNo=114539&article.offset=0&articleLimit=10#/list"> data-driven interfaces </a> at Yonsei CS
 - Aug 2020 : Invited on the panel for <a href="http://learningatscale.acm.org/las2020/workshops/artificial-intelligence-for-video-based-learning-at-scale/">AI for Video-Based Learning Workshop</a> at <a hred="https://learningatscale.acm.org/las2020/">L@S 2020</a>. 
 - Oct 2019 : <a href="http://schedule.bid-seminar.com/speakers/171"> Invited Talk </a>at Berkeley Institute of Design - Fall 2019 Seminar Series
 - Oct 2019 : Visiting Harvard University + <a href="https://www.csail.mit.edu/event/data-models-sequential-tasks-user-interface-design">Invited Talk </a>at MIT CSAIL HCI Seminar Series 2019
