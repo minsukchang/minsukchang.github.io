@@ -15,9 +15,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi :) I am a research scientist at [Naver AI Lab](). I am running a research team at the intersection of HCI and AI, exploring novel techniques in computational interaction powered by AI technologies. We build AI powered systems with users in the loop, and we evaluate these systems with real user populations.
+Hi :) I am a research scientist (technical leader) at [NAVER AI Lab](), where I explore novel computational interaction techniques powered by AI technologies. I'm also a technical leader at [NAVER Clova](), where I lead a team of engineers for building and evaluating AI powered systems with users in the loop. (Both the AI Lab and Clova are hiring!)
 
-My primary research interests are 1) modeling [conversational interactions](), 2) making [massive scale language models]() usable and useful, and 3) modeling users and interfaces as [computationally rational agents]().
+My current research interests are 1) modeling [conversational interactions](), 2) making [massive scale language models]() usable and useful, and 3) [simulation-based models]() of users and interfaces.
 
 I have a PhD in Computer Science from [KAIST](http://www.kaist.ac.kr){:target="\_blank"}. During my PhD, I was advised by [Juho Kim](http://juhokim.com){:target="\_blank"} in the [KIXLAB](http://kixlab.org){:target="\_blank"}.
 

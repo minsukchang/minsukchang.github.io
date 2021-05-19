@@ -33,6 +33,10 @@ nav: true
 - CHI 2017
 - UIST 2017, 2018
 - ICML 2020
+
+#### Other
+- Software Engineer (New Hire) Bootcamp Mentor @ NAVER 2021
+- Technical Growth Committee (AI) @ NAVER 2021
   
 <br/>
 <br/>
