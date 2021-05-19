@@ -7,7 +7,7 @@ nav: true
 ---
 
 #### Organizing Committee
-- SIGCHI Operations Committee
+- [SIGCHI Operations Committee](https://sigchi.org/people/operations-committee/)
 - UIST 2021-22 Publicity Co-Chair
 - CHI 2021-22 Video Capture Co-Chair
 - ISS 2019 Video Chair
