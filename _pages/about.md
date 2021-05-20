@@ -6,9 +6,8 @@ description: Research Scientist at <a href="#">Naver AI Lab</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p> Seattle, WA, July 2018 </p>
+  image: prof_pic3.jpg
+  address: 
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
