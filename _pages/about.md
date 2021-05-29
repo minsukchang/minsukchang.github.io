@@ -7,13 +7,15 @@ description: Research Scientist at <a href="#">Naver AI Lab</a>.
 profile:
   align: right
   image: prof_pic.jpg
+  address: >
+  2018 Summer, Seattle
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi :) I am a research scientist (technical leader) at [NAVER AI Lab](), where I explore novel computational interaction techniques powered by AI technologies. I'm also a technical leader at [NAVER Clova](), where I lead a team of engineers for building and evaluating AI powered systems with users in the loop. (Both the AI Lab and Clova are hiring!)
+Hi :) I am a research scientist at [NAVER AI Lab](), where I explore novel computational interaction techniques powered by AI technologies. I'm also a technical leader at [NAVER Clova](), where I lead a team of engineers for building and evaluating AI powered systems with users in the loop. (Both the AI Lab and Clova are hiring!)
 
 My current research interests are 1) modeling [conversational interactions](), 2) making [massive scale language models]() usable and useful, and 3) [simulation-based models]() of users and interfaces.
 

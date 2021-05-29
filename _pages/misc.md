@@ -9,7 +9,7 @@ nav: true
 #### Organizing Committee
 - [SIGCHI Operations Committee](https://sigchi.org/people/operations-committee/)
 - UIST 2021-22 Publicity Co-Chair
-- CHI 2021-22 Video Capture Co-Chair
+- CHI 2021 Video Capture Co-Chair
 - ISS 2019 Video Chair
   
 #### Program Committee
@@ -36,7 +36,6 @@ nav: true
 
 #### Other
 - Software Engineer (New Hire) Bootcamp Mentor @ NAVER 2021
-- Technical Growth Committee (AI) @ NAVER 2021
   
 <br/>
 <br/>
