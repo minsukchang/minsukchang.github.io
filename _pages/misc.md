@@ -43,6 +43,7 @@ nav: true
 
 
 ## invited talks and panels
+- July 2021 : Invited on the <a href="https://www.conversationaluserinterfaces.org/2021/programme/industry-panel/">industry panel</a> for <a href="https://www.conversationaluserinterfaces.org/2021/"> CUI 2021 conference </a> to discuss the future of conversational interfaces.
 - Mar 2021 : Invited to give a talk on <a href="https://cs.yonsei.ac.kr/cs/board/notice.do?mode=view&articleNo=114539&article.offset=0&articleLimit=10#/list"> data-driven interfaces </a> at Yonsei CS
 - Aug 2020 : Invited on the panel for <a href="http://learningatscale.acm.org/las2020/workshops/artificial-intelligence-for-video-based-learning-at-scale/">AI for Video-Based Learning Workshop</a> at <a hred="https://learningatscale.acm.org/las2020/">L@S 2020</a>. 
 - Oct 2019 : <a href="http://schedule.bid-seminar.com/speakers/171"> Invited Talk </a>at Berkeley Institute of Design - Fall 2019 Seminar Series
