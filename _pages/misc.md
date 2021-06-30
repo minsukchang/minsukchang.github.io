@@ -13,6 +13,8 @@ nav: true
 - ISS 2019 Video Chair
   
 #### Program Committee
+- CHI 2022
+- HCOMP 2021
 - UIST 2021
 - Viz Meets AI 2021
 - CSCW 2021
