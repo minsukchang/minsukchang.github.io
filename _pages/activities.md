@@ -3,9 +3,8 @@ layout: page
 title: activities
 permalink: /activities/
 description: A list of academic services and other activities
-nav: false
+nav: true
 nav_order: 2
-display_categories: [work, fun]
 horizontal: false
 ---
 
