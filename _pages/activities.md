@@ -15,7 +15,8 @@ horizontal: false
 - UIST 2021-22 Publicity Co-Chair
 - CHI 2021 Video Capture Co-Chair
 - ISS 2019 Video Chair
-  
+
+
 #### Program Committee
 - CHI 2022, 2023
 - HCOMP 2021
