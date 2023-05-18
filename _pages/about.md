@@ -19,7 +19,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi :) I am a researcher on the [PAIR (People and AI Research)](https://pair.withgoogle.com/) team at [Google AI](https://ai.google/). I am interested in our and other agents' (in)ability to acquire new skills through interations.
+Hi :) I am a research scientist on the [PAIR (People and AI Research)](https://pair.withgoogle.com/) team at [Google Deepmind / Research](https://ai.google/). I am also an adjunct professor at the [KAIST Graduate School of AI](https://gsai.kaist.ac.kr/).
+
+I am interested in our and other agents' (in)ability to acquire new skills/knowledge through interation. I like thinking about the interactive experience as well as the skill/knowledge acquisition mechanisms.
 
 <!-- I hold a PhD in Computer Science from [KAIST](http://www.kaist.ac.kr){:target="\_blank"}. During my PhD, I was advised by [Juho Kim](http://juhokim.com){:target="\_blank"} in the [KIXLAB](http://kixlab.org){:target="\_blank"}. Before joining Google, I was a research scientist and a technical leader at [Naver AI](https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab), where I led research at the intersection of Human-Computer Interaction and Machine Learning. -->
 
