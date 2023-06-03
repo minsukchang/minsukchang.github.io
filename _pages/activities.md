@@ -21,7 +21,7 @@ horizontal: false
 - CHI 2022, 2023
 - HCOMP 2021
 - UIST 2021, 2022, 2023
-- Viz Meets AI(PacificViz) 2021, 2022
+- Viz Meets AI (PacificViz) 2021, 2022, 2023
 - CSCW 2021
 - GI 2020
 - WWW 2020, 2021, 2022
