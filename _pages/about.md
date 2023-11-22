@@ -25,6 +25,8 @@ I am interested in our and other agents' (in)ability to acquire new skills/knowl
 
 I often like to draw parallels between human learning and the learning capabilities of artificial agents. I find it exciting when insights gained from understanding human learning can be applied to enhance the learning abilities of AI systems, and vice versa.
 
+This website is written with the help of [Google Bard](https://bard.google.com/)
+
 
 <!-- I hold a PhD in Computer Science from [KAIST](http://www.kaist.ac.kr){:target="\_blank"}. During my PhD, I was advised by [Juho Kim](http://juhokim.com){:target="\_blank"} in the [KIXLAB](http://kixlab.org){:target="\_blank"}. Before joining Google, I was a research scientist and a technical leader at [Naver AI](https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab), where I led research at the intersection of Human-Computer Interaction and Machine Learning. -->
 
