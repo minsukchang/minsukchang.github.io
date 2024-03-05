@@ -19,7 +19,7 @@ horizontal: false
 
 #### Program Committee
 - CHI 2022, 2023, 2024
-- UIST 2021, 2022, 2023
+- UIST 2021, 2022, 2023, 2024
 - Viz Meets AI (PacificViz) 2021, 2022, 2023
 - HCOMP 2021
 - CSCW 2021
@@ -29,6 +29,8 @@ horizontal: false
 
 
 #### Reviewer
+- ICML 2024 Workshop
+- ACL 2024 ARR
 - IUI 2022
 - CHI 2017, 2018, 2019, 2020, 2021, 2021 LBW
 - CSCW 2018, 2019, 2020 (Outstanding Review)
