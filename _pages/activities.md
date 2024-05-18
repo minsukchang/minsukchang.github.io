@@ -18,7 +18,7 @@ horizontal: false
 
 
 #### Program Committee
-- CHI 2022, 2023, 2024
+- CHI 2022, 2023, 2024, 2025
 - UIST 2021, 2022, 2023, 2024
 - Viz Meets AI (PacificViz) 2021, 2022, 2023
 - HCOMP 2021
@@ -26,7 +26,7 @@ horizontal: false
 - GI 2020
 - WWW 2020, 2021, 2022
 - CHI 2019 LBW, 2021 SRC
-
+- [CoCoMARL 2024](https://sites.google.com/view/cocomarl-2024/home)
 
 #### Reviewer
 - ICML 2024 Workshop
