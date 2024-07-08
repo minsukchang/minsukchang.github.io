@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi :) I am a research scientist at [Google Deepmind](https://deepmind.google/). I am also an adjunct professor at the [KAIST Graduate School of AI](https://gsai.kaist.ac.kr/).
+Hi :) I am a research scientist at [Google Deepmind](https://deepmind.google/).
 
 I am interested in our and other agents' (in)ability to acquire new skills/knowledge through interaction. I build and study the dynamics of learning processes, seeking to understand how agents can effectively gather information, adapt to new situations, and expand their repertoire of behaviors.
 
