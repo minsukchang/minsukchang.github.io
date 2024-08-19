@@ -9,7 +9,6 @@ horizontal: false
 ---
 
 
-
 #### Organizing Committee
 - [SIGCHI Operations Committee](https://sigchi.org/people/operations-committee/)
 - UIST 2021-22 Publicity Co-Chair
@@ -19,7 +18,7 @@ horizontal: false
 
 #### Program Committee
 - CHI 2022, 2023, 2024, 2025
-- UIST 2021, 2022, 2023, 2024
+- UIST 2021, 2022, 2023 (+Awards Committee), 2024 (+Awards Committee)
 - Viz Meets AI (PacificViz) 2021, 2022, 2023
 - HCOMP 2021
 - CSCW 2021
@@ -29,6 +28,7 @@ horizontal: false
 - [CoCoMARL 2024](https://sites.google.com/view/cocomarl-2024/home)
 
 #### Reviewer
+- NeurIPS 2024 Workshop on Behavioral ML
 - ICML 2024 Workshop
 - ACL 2024 ARR
 - IUI 2022
