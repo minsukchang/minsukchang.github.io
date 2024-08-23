@@ -17,7 +17,7 @@ horizontal: false
 
 
 #### Program Committee
-- CHI 2022, 2023, 2024, 2025
+- CHI 2022, 2023, 2024 (+Awards Committee), 2025
 - UIST 2021, 2022, 2023 (+Awards Committee), 2024 (+Awards Committee)
 - Viz Meets AI (PacificViz) 2021, 2022, 2023
 - HCOMP 2021
@@ -28,7 +28,7 @@ horizontal: false
 - [CoCoMARL 2024](https://sites.google.com/view/cocomarl-2024/home)
 
 #### Reviewer
-- NeurIPS 2024 Workshop on Behavioral ML
+- NeurIPS 2024 Behavioral ML Workshop
 - ICML 2024 Workshop
 - ACL 2024 ARR
 - IUI 2022
