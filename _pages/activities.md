@@ -28,6 +28,8 @@ horizontal: false
 - [CoCoMARL 2024](https://sites.google.com/view/cocomarl-2024/home)
 
 #### Reviewer
+- ICLR 2025
+- CHI 2025 Workshop
 - NeurIPS 2024 Behavioral ML Workshop
 - ICML 2024 Workshop
 - ACL 2024 ARR
