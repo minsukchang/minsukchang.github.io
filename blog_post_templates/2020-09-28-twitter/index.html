@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>zero to demo | Minsuk Chang</title>
+    <title>a post with twitter | Minsuk Chang</title>
     <meta name="author" content="Minsuk  Chang">
-    <meta name="description" content="first blog post">
+    <meta name="description" content="an example of a blog post with twitter">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -31,7 +31,7 @@
     <!-- Styles -->
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://minsukcghang.github.io/blog/2024/first/">
+    <link rel="canonical" href="https://minsukcghang.github.io/blog_post_templates/2020-09-28-twitter/">
     
     <!-- Dark Mode -->
     
@@ -112,36 +112,44 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">zero to demo</h1>
-    <p class="post-meta">September 6, 2024</p>
+    <h1 class="post-title">a post with twitter</h1>
+    <p class="post-meta">September 28, 2020</p>
     <p class="post-tags">
-      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
         ·  
-        <a href="/blog/tag/llm">
-          <i class="fas fa-hashtag fa-sm"></i> LLM</a>  
-          <a href="/blog/tag/reasoning">
-          <i class="fas fa-hashtag fa-sm"></i> Reasoning</a>  
+        <a href="/blog/tag/formatting">
+          <i class="fas fa-hashtag fa-sm"></i> formatting</a>  
           
         ·  
-        <a href="/blog/category/random-thoughts">
-          <i class="fas fa-tag fa-sm"></i> random-thoughts</a>  
+        <a href="/blog/category/sample-posts-external-services">
+          <i class="fas fa-tag fa-sm"></i> sample-posts external-services</a>  
           
 
     </p>
   </header>
 
   <article class="post-content">
-    <p>실적발표가 지나서 떠들 수 있게 되어 적어보는 몇마디.</p>
+    <p>A sample blog page that demonstrates the inclusion of Tweets/Timelines/etc.</p>
 
-<p>구글의 전략은 사실 항상 “더 크고 더 빠른 고속도로를 계속 만들고 있다가 괜찮은 사업이 보이면 (사와서) 여기에 태운다” 였다. 인터넷/모바일에서는 그 노하우를 따라갈만한 회사는 가히 없는 것 같다. 그 어떤 복잡도를 가진 것이라도 온라인/모바일 이라면 수개월안에 바로 scale up 된다. 비슷한 맥락에서 진짜 두눈으로 몇년째 보면서도 아직도 믿기지가 않는게 검색 광고 시장은 아직도 계속 성장하고 있다. 뭘 그렇게들 많이 팔고 싶고 사고 싶은걸까.</p>
+<h1 id="tweet">Tweet</h1>
+<p>An example of displaying a tweet:</p>
+<div class="jekyll-twitter-plugin">
+<blockquote class="twitter-tweet">
+<p lang="sv" dir="ltr">jekyll-twitter-plugin (1.0.0): A Liquid tag plugin for Jekyll that renders Tweets from Twitter API <a href="http://t.co/m4EIQPM9h4" rel="external nofollow noopener" target="_blank">http://t.co/m4EIQPM9h4</a></p>— RubyGems (@rubygems) <a href="https://twitter.com/rubygems/status/518821243320287232?ref_src=twsrc%5Etfw" rel="external nofollow noopener" target="_blank">October 5, 2014</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>Waymo는 10년이 걸렸다. 물리적인 세상의 복잡도는 온라인과는 당연히 다르기 때문에 그렇다. 물론 최근 LLM 덕분에 빠른 실험과 iteration이 가능해진 것은 맞는데, 오히려 그래서 large vision language 모델들이 본격적으로 나오기 이전에 물리적인 세상에서 scale up 하는 일을 10년 동안 해온 그 노하우는 어마어마할 것이다.</p>
+</div>
 
-<p>자동차 보다 조금 더 복잡한 로봇들은 얼마나 걸릴까. 누가 먼저 규모의 경제를 달성하는데 성공할지 궁금하다. 자동차보다는 조금 더 복잡한 agent들이 길거리 보다 조금은 더 이해관계가 심플한 physical world에서 transformer의 generalizability를 보이는 데모들이 점점 많이 나오고 있다. (지난주 MTV 출장 가서 GDM robotics에 놀러갔었는데 진짜 얘네들 제정신인가 싶었다.) 우리가 세상에서 체계적으로 이해할 수 있는 부분에 대해서는 점점 많이 (빠르게) 알아가게 될 것 같다.</p>
+<h1 id="timeline">Timeline</h1>
+<p>An example of pulling from a timeline:</p>
+<div class="jekyll-twitter-plugin">
+<a class="twitter-timeline" data-width="500" data-tweet-limit="3" href="https://twitter.com/jekyllrb?ref_src=twsrc%5Etfw" rel="external nofollow noopener" target="_blank">Tweets by jekyllrb</a>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
-<p>PI는 8개월만에 (almost)zero to demo를 했는데 (사실 zero가 아니긴 했고 대학원생들이 대거 동원되기도 했지만…), 그래서 laundry folding이 어쩌라고? 라고 생각할 수도 있지만 꽤나 generalized policy를 학습한건 진짜 멋있는 것 같다. GDM에서 알고 지내던 이들이 많아 이야기를 해봤지만 한국이랑 “기술창업”이 좀 다르다는 걸 많이 느낀다. 아무래도 VC들이 의료, 법, 기술 등등 도메인 전문가 출신인 것, 본인들이 창업을 해본 경험이 있는 것이 그냥 경영대 나온 VC들이 머리로만 아는 분위기랑은 많이 달라서 그럴 것 같다. 그래서 그런지 여기는 기술적으로 가능함을 보이면 나머지 특정 도메인안에 있는 시스템적인 허들은 투자자들의 자본과 네트워크로 해결해주는 그런 공식이 있는 것 같다.</p>
-
-<p>예전에 민지랑 AI커버 노래를 몇 개 듣다가 결국엔 이런 기술 때문에 현장에서 가수와 교감하면서 듣고 즐기고 하는 경험이 더 가치가 있게 되고 사람들이 라이브 공연을 더욱 더 원하게 될 것 같다고 했다. AI 인플루엔서들이 많아지고 AI에 대해서 떠드는 사람이 더 많아지면서 실제로 만들어 본 사람들이랑 직접 만나서 이야기하는 걸 더 찾게 되었다. Noise layer가 너무 두꺼워서 진짜 정보는 퍼지기가 너무 어려운 그런 느낌. 점점 finance 분야 처럼 institutional knowledge는 정말 institution에만 갇혀있고 사람이 옮길 때만 아주 일부가 사람과 함께 트랜스퍼가 일어나게 되는건 아닐지.</p>
+<h1 id="additional-details">Additional Details</h1>
+<p>For more details on using the plugin visit: <a href="https://github.com/rob-murray/jekyll-twitter-plugin" rel="external nofollow noopener" target="_blank">jekyll-twitter-plugin</a></p>
 
   </article>
 
