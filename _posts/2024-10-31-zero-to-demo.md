@@ -3,7 +3,7 @@ layout: post
 title:  zero to demo
 date:   2024-10-31 22:49:16
 description: first blog post
-tags: LLM Reasoning
+tags: Startup, GenAI, LLM, Google, Waymo
 categories: random-thoughts
 ---
 
