@@ -19,4 +19,4 @@ categories: random-thoughts
 
 --
 
-블로그 글을 올리자마자 발견한 비슷한 맥락. https://x.com/edwardfhughes/status/1897954136215191592
+블로그 글을 올리자마자 발견한 비슷한 맥락. [Edward Hughes' tweet on Alfred North Whitehead](https://x.com/edwardfhughes/status/1897954136215191592)
