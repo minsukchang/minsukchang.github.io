@@ -3,7 +3,7 @@ layout: post
 title:  no shortcuts
 date:   2025-03-07 02:10:16
 description: second blog post
-tags: LLM, social intelligence
+tags: LLM, social intelligence, K-GPU, K-LLM
 categories: random-thoughts
 ---
 
