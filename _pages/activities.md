@@ -18,7 +18,7 @@ horizontal: false
 
 #### Program Committee
 - CHI 2022, 2023, 2024 (+Awards Committee), 2025
-- UIST 2021, 2022, 2023 (+Awards Committee), 2024 (+Awards Committee)
+- UIST 2021, 2022, 2023 (+Awards Committee), 2024 (+Awards Committee), 2025
 - Viz Meets AI (PacificViz) 2021, 2022, 2023
 - HCOMP 2021
 - CSCW 2021
