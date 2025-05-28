@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Don’t do old design with new technology"
 date:   2025-05-25 20:53:16
