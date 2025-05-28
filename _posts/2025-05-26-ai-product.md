@@ -2,7 +2,7 @@
 layout: post
 title:  "Don’t do old design with new technology"
 date:   2025-05-25 20:53:16
-description: second blog post
+description: third blog post
 tags: AI, product, service, UX, design
 categories: random-thoughts
 ---
