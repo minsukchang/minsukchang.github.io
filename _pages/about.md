@@ -21,8 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a research scientist at [Google DeepMind](https://deepmind.google/) studying the mechanisms that enable both biological and artificial agents to learn and adapt through interaction in non-stationary environments. My current work centers on post-training methodologies for [Gemini](https://gemini.google.com/), alongside ongoing contributions to [Concordia](https://github.com/google-deepmind/concordia), a library for generative multi-agent simulation.
 
-I was named an [Asian American and Pacific Islander pioneer and luminary in computing](https://www.acm.org/diversity-inclusion/apahm-2023) by the ACM in 2023 (as part of the Asian Pacific American Heritage Month celebration), alongside David Lam, Jerry Yang, and Fei-fei Li. 
-
+The ACM recognized my contributions to computing in 2023 by naming me an [Asian American and Pacific Islander Pioneer and Luminary](https://www.acm.org/diversity-inclusion/apahm-2023) (during their Asian Pacific American Heritage Month celebration). It is a profound honor to be featured alongside true legends such as David Lam, Jerry Yang, and Fei-fei Li. I'm still flabbergasted. 
 
 <!-- I am interested in our and other agents' (in)ability to acquire new skills/knowledge through interaction. I build and study the dynamics of learning processes, seeking to understand how agents can effectively gather information, adapt to new situations, and expand their repertoire of behaviors.
 
