@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why I'm Declining AC/PC Invites"
+title:  "I declined all my HCI PC invites. Here's why."
 date:   2025-11-13 20:53:16
 description: fourth blog post
 tags: AI, HCI, peer-review, conference, academia
