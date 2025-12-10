@@ -11,6 +11,7 @@ I recently received, and politely declined, invitations to serve on the Program 
 
 Briefly to touch on the "old news", serving on these committees requires a significant investment of time and intellectual energy. While peer review is essential, I've found that the current review process in fast-moving fields can sometimes struggle to keep pace with genuine technological breakthroughs. While it is important to build on top of each other's ideas, and in some sense, that's why we have these conferences, my concern is that the system sometimes over-incentivizes incremental, trend-focused work over foundational research with high-risk, high-reward potential. The quality of work that does get published, and the work that is frequently rejected, often seems governed more by trend-chasing and adherence to rigid methodological dogma than by genuine intellectual merit or impact. The effort required for rigorous, fair, and constructive reviewing is simply not justified when the system, overall, seems to be over-driving the field towards incrementalism rather than breakthroughs. I don't have any clever solutions, so I'll leave it at this here.
 
+
 Now, back to HCI.
 
 The difficulty of actively participating in peer-reivew is compounded by my experience working in fast moving research environments. When you've seen firsthand the velocity of progress, the scale of resources, and the depth of the theoretical challenges being tackled in labs pushing the frontier of AI, it creates a kind of intellectual distance. Frankly, if someone was looking at us from a vantage point, it is probably very challenging to view much of the current HCI research seriously. I see a field largely preoccupied with:
@@ -22,7 +23,8 @@ We are building a future based on fundamentally new intelligence capabilities, a
 
 3) Unactionable design artifacts, like  "guidelines," "recommendations," or "design patterns": they often fails to integrate with the actual development trajectory of AI systems. This results in theoretical prescriptions that lack practical impact on the future-state of AI technology.
 
-The biggest challenge in AI today is not making interfaces "better"; it’s understanding the human side of the loop. This requires a seismic shift in research priorities. We need to move beyond simple usability and shallow interaction design and focus on:
+
+The research we desparately need is something else. The biggest challenge in AI (or in HCI) today is not making interfaces "better"; it’s understanding the human side of the loop. This requires a seismic shift in research priorities. We need to move beyond simple usability and shallow interaction design and focus on:
 
 1) Deep Human Modeling: How do humans actually think, decide, and collaborate when augmented by powerful, non-deterministic AI systems? We need formalized, testable cognitive models, not just self-reported feedback from small user studies.
 
@@ -30,4 +32,4 @@ The biggest challenge in AI today is not making interfaces "better"; it’s unde
 
 3) Synthetic Agency: How increasingly sophisticated, high-agency AI systems can be effectively and reliably built to model, simulate, or analyze complex sociological and psychological mechanisms, rather than merely being the subject of usability studies.
 
-I believe in the importance of Human-Computer Interaction, and I think the time has finally come for the field to be relevant again. But I cannot in good conscience spend my limited time supporting a system that is prioritizing LLM wrappers and incremental usability studies over the deep, foundational work of modeling the human mind in a world of advanced AI. I really hope the field re-centers itself on the core cognitive and modeling challenges that the AI revolution has unleashed.
+I believe in the importance of Human-Computer Interaction, and I think the time has finally come for the field to be extremely important and bring immense impact. But I cannot in good conscience spend my limited time supporting a system that is prioritizing LLM wrappers and incremental usability studies over the deep, foundational work of modeling the human mind in a world of advanced AI. I really hope the field re-centers itself on the core cognitive and modeling challenges that the generative AI has unleashed.
