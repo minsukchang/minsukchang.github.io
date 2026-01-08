@@ -1,85 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Minsuk Chang | Blog</title>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer data-domain="minsukchang.com" src="https://plausible.io/js/plausible.js"></script>
     <link rel="canonical" href="http://minsukchang.com" />
     <title>Minsuk Chang</title>
     <style>
-        body {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            font-family: "Times New Roman", Times, serif;
-            line-height: 1.5;
-            color: #111;
-        }
+      body {
+	  line-height: 1.5;
+	  max-width: 650px;
+	  margin: 50px auto;
+	  padding: 20px;
+      }
 
-        /* The soumith.ch Header Style */
-        .header-line {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        
-        .name {
-            font-weight: bold;
-        }
+      nav a {
+	  margin-right: 10px;
+      }
 
-        .links {
-            color: #555;
-        }
+      .name-link {
+          color: darkblue;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+          text-decoration: none;
+          font-size: 1.5em; /* Increased font size */
+          font-weight: bold; /* Added to ensure the text remains bold */
+      }
 
-        .links a {
-            text-decoration: none;
-            color: #0000EE;
-            margin: 0 3px;
-        }
+      details > summary {
+	  list-style: none;
+      }
 
-        .links a:hover {
-            text-decoration: underline;
-        }
+      details > summary::-webkit-details-marker {
+	  display: none;
+      }
 
-        /* Academic section styling */
-        h2 { 
-            font-size: 1.2em; 
-            border-bottom: 1px solid #000; 
-            margin-top: 30px; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Mobile specific adjustments */
-        @media (max-width: 600px) {
-            body {
-                margin: 10px auto;
-                padding: 15px;
-                line-height: 1.4;
-            }
-            .header-line {
-                gap: 5px;
-            }
-            .separator {
-                display: none; /* Hide the | pipe on small screens to save space */
-            }
-        }
     </style>
 </head>
 <body>
-        <div class="header-line">
-        <span class="name">Minsuk Chang</span>
-        <span class="links">
-            | 
-            <a href="/blog/">Blog</a> 
+    <header>
+        <nav>
+            <a href="/" class="name-link"><b>Minsuk Chang</b></a>
+            |&nbsp&nbsp <a href="/blog">Blog</a>
             <a href="https://x.com/minsukchang">X</a> 
             <a href="https://linkedin.com/in/minsuk">LinkedIn</a> 
             <a href="https://scholar.google.com/citations?user=1j2nBpoAAAAJ&hl=en&authuser=1">Publications</a>
-        </span>
-    </div>
-    <h1>Posts</h1>
-    <a class="post-link" href="posts/2024-10-31-zero-to-demo.html">
-        <span class="date">2026-01-07</span> Zero to Demo
-    </a>
+      </nav>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <a class="post-link" href="posts/2024-10-31-zero-to-demo.html"> <span class="date">2026-01-07</span> Zero to Demo </a>
+            </li>
+        </ul>
+    </main>
+    
 </body>
 </html>
