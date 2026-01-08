@@ -15,7 +15,7 @@
             color: #111;
         }
 
-        /* The Soumith Header Style */
+        /* The soumith.ch Header Style */
         .header-line {
             font-size: 1.2em;
             margin-bottom: 20px;
@@ -47,6 +47,22 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 600px) {
+            body {
+                margin: 10px auto;
+                padding: 15px;
+                line-height: 1.4;
+            }
+            .header-line {
+                gap: 5px;
+            }
+            .separator {
+                display: none; /* Hide the | pipe on small screens to save space */
+            }
+        }
+    </style>
     </style>
 </head>
 <body>
