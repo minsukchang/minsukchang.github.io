@@ -16,11 +16,23 @@ big { font-size: 300%; }
 /* Improved readability styles */
 body {
     font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller base font for mobile balance */
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    /* 2. ADD THESE FOR RESPONSIVE WIDTH */
+    width: auto;
+    overflow-wrap: break-word;
+}
+
+/* 3. ENSURE IMAGES DON'T OVERFLOW ON PHONES */
+.md img { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 100%; 
+    height: auto; 
 }
 
 .md h1, .md h2, .md h3 {
@@ -36,6 +48,16 @@ body {
 .md .longTOC, .md .mediumTOC, .md .shortTOC {
     display: none;
 }
+
+/* 4. OPTIONAL: MEDIA QUERY FOR SMALL SCREENS */
+@media (max-width: 600px) {
+    body {
+        font-size: 17px;
+        padding: 15px;
+    }
+    big { font-size: 200%; }
+}
+
 
 </style>
 
