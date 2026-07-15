@@ -72,85 +72,85 @@ Here is how we can break down this formulation:
 
 1. Deconstructing the "Context"
 
-The variable $\text{context}$ isn't just a static environment; it is a highly complex, multi-layered state vector. We can decompose it into:
+   The variable $\text{context}$ isn't just a static environment; it is a highly complex, multi-layered state vector. We can decompose it into:
 
-*   **External Context ($C_{ext}$):** The immediate physical or digital environment, time of day, social setting, and available tools or interfaces.
-*   **Internal State ($C_{int}$):** The user's latent variables—cognitive load, emotional state, fatigue, and long-term goals or intent.
-*   **Historical Context ($C_{hist}$):** The sequence of prior actions and outcomes. Humans are rarely memoryless; their current action is heavily conditioned on the trajectory that got them here ($P(\text{action}_t \mid \text{context}_t, \mathcal{H}_{\lt t})$).
+   *   **External Context ($C_{ext}$):** The immediate physical or digital environment, time of day, social setting, and available tools or interfaces.
+   *   **Internal State ($C_{int}$):** The user's latent variables—cognitive load, emotional state, fatigue, and long-term goals or intent.
+   *   **Historical Context ($C_{hist}$):** The sequence of prior actions and outcomes. Humans are rarely memoryless; their current action is heavily conditioned on the trajectory that got them here ($P(\text{action}_t \mid \text{context}_t, \mathcal{H}_{\lt t})$).
 
 2. The Nature of the Mapping
 
-If a user is a conditional distribution, how do they sample from it?
+   If a user is a conditional distribution, how do they sample from it?
 
-*   **Bounded Rationality (Stochastic Policy):** Humans do not always play the absolute argmax (the single "best" utility-maximizing action). Instead, they sample stochastically. Factors like cognitive friction, distraction, or habit mean they might choose a sub-optimal action.
-*   **Active Inference:** From a cognitive science perspective, the user is constantly trying to minimize surprise (free energy). The "action" they take is an attempt to update the external context to match their internal expectations or desired goals.
+   *   **Bounded Rationality (Stochastic Policy):** Humans do not always play the absolute argmax (the single "best" utility-maximizing action). Instead, they sample stochastically. Factors like cognitive friction, distraction, or habit mean they might choose a sub-optimal action.
+   *   **Active Inference:** From a cognitive science perspective, the user is constantly trying to minimize surprise (free energy). The "action" they take is an attempt to update the external context to match their internal expectations or desired goals.
 
 3. The AI (or the HCI)'s Role: Context Engineering
 
-When we build interactive AI, multi-agent systems, or tools, our goal is often to steer or assist the user. Since we cannot directly rewrite the user's internal policy $P$, our only lever is to manipulate the context we provide them.
+   When we build interactive AI, multi-agent systems, or tools, our goal is often to steer or assist the user. Since we cannot directly rewrite the user's internal policy $P$, our only lever is to manipulate the context we provide them.
 
-If we want to maximize the probability of a successful joint outcome (User + AI (or some other interactive technology)), we are essentially solving:
+    If we want to maximize the probability of a successful joint outcome (User + AI (or some other interactive technology)), we are essentially solving:
 
-$$\max_{\text{AI}\_\text{output}} P(\text{success} \mid \text{user}\_\text{action}, \text{context})$$
+    $$\max_{\text{AI}\_\text{output}} P(\text{success} \mid \text{user}\_\text{action}, \text{context})$$
 
-Where the user's action is drawn from:
+    Where the user's action is drawn from:
 
-$$\text{user}\_\text{action} \sim P(\text{action} \mid \text{AI}\_\text{output}, \text{internal}\_\text{state})$$
+    $$\text{user}\_\text{action} \sim P(\text{action} \mid \text{AI}\_\text{output}, \text{internal}\_\text{state})$$
 
-By designing interfaces, agentic suggestions, or information layouts (the "AI output"), we are performing **context engineering**—structuring the environment to lower the cognitive friction of the target action, making the ideal path the high-probability choice.
+    By designing interfaces, agentic suggestions, or information layouts (the "AI output"), we are performing **context engineering**—structuring the environment to lower the cognitive friction of the target action, making the ideal path the high-probability choice.
 
-## Decomposing the Output: What is the Action Space?
+4.  Decomposing the Output: What is the Action Space?
 
-The action space $\mathcal{A}$ isn't just "clicking a button." We can partition it into different cognitive costs:
+    The action space $\mathcal{A}$ isn't just "clicking a button." We can partition it into different cognitive costs:
 
-| Action Category | Cognitive Cost | Example | Transition Probability |
-| :--- | :--- | :--- | :--- |
-| **Physical Action ($A_{	ext{phys}}$)** | Extremely Low | Clicking, scrolling, swiping | Fast, high-throughput |
-| **Input Generation ($A_{	ext{input}}$)** | High | Typing a search query, drafting a prompt | Slow, bottlenecked by language generation |
-| **Cognitive Evaluation ($A_{	ext{eval}}$)** | High | Reading, evaluating system outputs, checking for hallucinations | Invisible, slow, highly fatiguing |
+    | Action Category | Cognitive Cost | Example | Transition Probability |
+    | :--- | :--- | :--- | :--- |
+    | **Physical Action ($A_{	ext{phys}}$)** | Extremely Low | Clicking, scrolling, swiping | Fast, high-throughput |
+    | **Input Generation ($A_{	ext{input}}$)** | High | Typing a search query, drafting a prompt | Slow, bottlenecked by language generation |
+    | **Cognitive Evaluation ($A_{	ext{eval}}$)** | High | Reading, evaluating system outputs, checking for hallucinations | Invisible, slow, highly fatiguing |
 
-When a system outputs a wall of text, it might reduce $A_{	ext{input}}$ (the user doesn't have to type as much), but it drastically spikes $A_{	ext{eval}}$ (the user has to read and audit everything).
-
-
-## The Human as a Stochastic Policy: How is the Action Sampled?
-
-Humans are not utility-maximizing machines that always choose the absolute optimal action. Instead, we can model the human action selection as a stochastic policy:
-
-$$P(a_t \mid C) = 	ext{Softmax}\left( rac{Q(C, a_t)}{	au} 
-ight)$$
-
-*   **$Q(C, a_t)$** is the user's perceived expected utility of taking action $a_t$ in context $C$.
-*   **$	au$** is the temperature (cognitive noise, distraction, or fatigue). When a user is tired or overwhelmed ($	au 	o \infty$), their action distribution flattens out—they start making random, sub-optimal choices, clicking whatever is easiest, or giving up entirely.
-
-### Cognitive Friction as "Energy Barriers"
-Every action has an associated activation energy or cognitive friction $F(a)$. We can think of the user's policy as a transition over an energy landscape.
-*   If $F(a)$ is too high (e.g., writing a complex prompt), the probability of that action drops to near zero.
-*   The job of excellent system design is to shape the landscape so that the "desired" action has the lowest energy barrier.
+    When a system outputs a wall of text, it might reduce $A_{	ext{input}}$ (the user doesn't have to type as much), but it drastically spikes $A_{	ext{eval}}$ (the user has to read and audit everything).
 
 
-## The Human-AI Closed Loop: Co-Evolution of States
+5. The Human as a Stochastic Policy: How is the Action Sampled?
 
-When a human interacts with an AI agent, we aren't looking at a static $P(	ext{action} \mid 	ext{context})$. We are looking at a reinforcement learning loop where two policies are trying to predict and influence each other.
+    Humans are not utility-maximizing machines that always choose the absolute optimal action. Instead, we can model the human action selection as a stochastic policy:
 
-```
-       [ Human Policy: P(A_h | C_h) ]
-               /                    Action (A_h)        State Update
-             /                             v                   v
-     [ Environment / Shared State Window ]
-            ^                   ^
-       Action (A_ai)       State Update
-               \             /
-      [ AI Agent Policy: P(A_ai | C_ai) ]
-```
+    $$P(a_t \mid C) = 	ext{Softmax}\left( rac{Q(C, a_t)}{	au} 
+    ight)$$
 
-In this closed loop:
-*   The AI outputs a response, which updates the shared context: $C_{t+1} = f(C_t, a_{	ext{ai}})$.
-*   The human processes this new context, updating their internal state $C_{	ext{cognitive}}$ (which might include frustration if the AI failed, or satisfaction if it succeeded).
-*   The human samples an action: $a_{h} \sim P(	ext{action} \mid C_{t+1})$.
+    *   **$Q(C, a_t)$** is the user's perceived expected utility of taking action $a_t$ in context $C$.
+    *   **$	au$** is the temperature (cognitive noise, distraction, or fatigue). When a user is tired or overwhelmed ($	au 	o \infty$), their action distribution flattens out—they start making random, sub-optimal choices, clicking whatever is easiest, or giving up entirely.
 
-### Modern day's Fitts's Law
+    ### Cognitive Friction as "Energy Barriers"
+    Every action has an associated activation energy or cognitive friction $F(a)$. We can think of the user's policy as a transition over an energy landscape.
+    *   If $F(a)$ is too high (e.g., writing a complex prompt), the probability of that action drops to near zero.
+    *   The job of excellent system design is to shape the landscape so that the "desired" action has the lowest energy barrier.
 
-Instead of designing the pixels, we have to design the feedback loops—ensuring that even when the system state transitions into an unexpected zone, the user's action space should still contain an easy path to recovery.
+
+6. The Human-AI Closed Loop: Co-Evolution of States
+
+    When a human interacts with an AI agent, we aren't looking at a static $P(	ext{action} \mid 	ext{context})$. We are looking at a reinforcement learning loop where two policies are trying to predict and influence each other.
+
+    ```
+        [ Human Policy: P(A_h | C_h) ]
+                /                    Action (A_h)        State Update
+                /                             v                   v
+        [ Environment / Shared State Window ]
+                ^                   ^
+        Action (A_ai)       State Update
+                \             /
+        [ AI Agent Policy: P(A_ai | C_ai) ]
+    ```
+
+    In this closed loop:
+    *   The AI outputs a response, which updates the shared context: $C_{t+1} = f(C_t, a_{	ext{ai}})$.
+    *   The human processes this new context, updating their internal state $C_{	ext{cognitive}}$ (which might include frustration if the AI failed, or satisfaction if it succeeded).
+    *   The human samples an action: $a_{h} \sim P(	ext{action} \mid C_{t+1})$.
+
+7. Modern day's Fitts's Law
+
+    Instead of designing the pixels, we have to design the feedback loops—ensuring that even when the system state transitions into an unexpected zone, the user's action space should still contain an easy path to recovery.
 
 
 ---
