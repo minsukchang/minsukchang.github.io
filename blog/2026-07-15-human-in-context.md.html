@@ -76,7 +76,7 @@ Here is how we can break down this formulation:
 
    *   **External Context ($C_{ext}$):** The immediate physical or digital environment, time of day, social setting, and available tools or interfaces.
    *   **Internal State ($C_{int}$):** The user's latent variables—cognitive load, emotional state, fatigue, and long-term goals or intent.
-   *   **Historical Context ($C_{hist}$):** The sequence of prior actions and outcomes. Humans are rarely memoryless; their current action is heavily conditioned on the trajectory that got them here ($P(\text{action}_t \mid \text{context}_t, \mathcal{H}_{\lt t})$).
+   *   **Historical Context ($C_{hist}$):** The sequence of prior actions and outcomes. Humans are rarely memoryless; their current action is heavily conditioned on the trajectory that got them here ($P(\text{action}_t \mid \text{context}_t, \mathcal{H}_{t-1})$).
 
 2. The Nature of the Mapping
 
@@ -91,11 +91,11 @@ Here is how we can break down this formulation:
 
     If we want to maximize the probability of a successful joint outcome (User + AI (or some other interactive technology)), we are essentially solving:
 
-    $$\max_{\text{AI}\_\text{output}} P(\text{success} \mid \text{user}\_\text{action}, \text{context})$$
+    $$\max_{\text{AI output}} P(\text{success} \mid \text{user action}, \text{context})$$
 
     Where the user's action is drawn from:
 
-    $$\text{user}\_\text{action} \sim P(\text{action} \mid \text{AI}\_\text{output}, \text{internal}\_\text{state})$$
+    $$\text{user action} \sim P(\text{action} \mid \text{AI output}, \text{internal state})$$
 
     By designing interfaces, agentic suggestions, or information layouts (the "AI output"), we are performing **context engineering**—structuring the environment to lower the cognitive friction of the target action, making the ideal path the high-probability choice.
 
@@ -105,22 +105,21 @@ Here is how we can break down this formulation:
 
     | Action Category | Cognitive Cost | Example | Transition Probability |
     | :--- | :--- | :--- | :--- |
-    | **Physical Action ($A_{	ext{phys}}$)** | Extremely Low | Clicking, scrolling, swiping | Fast, high-throughput |
-    | **Input Generation ($A_{	ext{input}}$)** | High | Typing a search query, drafting a prompt | Slow, bottlenecked by language generation |
-    | **Cognitive Evaluation ($A_{	ext{eval}}$)** | High | Reading, evaluating system outputs, checking for hallucinations | Invisible, slow, highly fatiguing |
+    | **Physical Action ($A_{\text{phys}}$)** | Extremely Low | Clicking, scrolling, swiping | Fast, high-throughput |
+    | **Input Generation ($A_{\text{input}}$)** | High | Typing a search query, drafting a prompt | Slow, bottlenecked by language generation |
+    | **Cognitive Evaluation ($A_{\text{eval}}$)** | High | Reading, evaluating system outputs, checking for hallucinations | Invisible, slow, highly fatiguing |
 
-    When a system outputs a wall of text, it might reduce $A_{	ext{input}}$ (the user doesn't have to type as much), but it drastically spikes $A_{	ext{eval}}$ (the user has to read and audit everything).
+    When a system outputs a wall of text, it might reduce $A_{\text{input}}$ (the user doesn't have to type as much), but it drastically spikes $A_{\text{eval}}$ (the user has to read and audit everything).
 
 
 5. The Human as a Stochastic Policy: How is the Action Sampled?
 
     Humans are not utility-maximizing machines that always choose the absolute optimal action. Instead, we can model the human action selection as a stochastic policy:
 
-    $$P(a_t \mid C) = 	ext{Softmax}\left( rac{Q(C, a_t)}{	au} 
-    ight)$$
+    $$P(a_t \mid C) = \operatorname{Softmax}\left(\frac{Q(C, a_t)}{\tau}\right)$$
 
     *   **$Q(C, a_t)$** is the user's perceived expected utility of taking action $a_t$ in context $C$.
-    *   **$	au$** is the temperature (cognitive noise, distraction, or fatigue). When a user is tired or overwhelmed ($	au 	o \infty$), their action distribution flattens out—they start making random, sub-optimal choices, clicking whatever is easiest, or giving up entirely.
+    *   **$\tau$** is the temperature (cognitive noise, distraction, or fatigue). When a user is tired or overwhelmed ($\tau \to \infty$), their action distribution flattens out—they start making random, sub-optimal choices, clicking whatever is easiest, or giving up entirely.
 
     ### Cognitive Friction as "Energy Barriers"
     Every action has an associated activation energy or cognitive friction $F(a)$. We can think of the user's policy as a transition over an energy landscape.
@@ -130,23 +129,25 @@ Here is how we can break down this formulation:
 
 6. The Human-AI Closed Loop: Co-Evolution of States
 
-    When a human interacts with an AI agent, we aren't looking at a static $P(	ext{action} \mid 	ext{context})$. We are looking at a reinforcement learning loop where two policies are trying to predict and influence each other.
+    When a human interacts with an AI agent, we aren't looking at a static $P(\text{action} \mid \text{context})$. We are looking at a reinforcement learning loop where two policies are trying to predict and influence each other.
 
-    ```
-        [ Human Policy: P(A_h | C_h) ]
-                /                    Action (A_h)        State Update
-                /                             v                   v
-        [ Environment / Shared State Window ]
-                ^                   ^
-        Action (A_ai)       State Update
-                \             /
-        [ AI Agent Policy: P(A_ai | C_ai) ]
-    ```
+    <div style="margin: 1.2em 0; overflow-x: auto;">
+    <pre style="display: inline-block; margin: 0; padding: 0.8em 1em; background: #f8f8f8; border-left: 3px solid #c8c8c8; white-space: pre;">
+[ Human Policy: P(A_h | C_h) ]
+        / Action (A_h) \ State Update
+       /                 v
+[ Environment / Shared State Window ]
+        ^                 ^
+Action (A_ai)     State Update
+        \             /
+[ AI Agent Policy: P(A_ai | C_ai) ]
+    </pre>
+    </div>
 
     In this closed loop:
-    *   The AI outputs a response, which updates the shared context: $C_{t+1} = f(C_t, a_{	ext{ai}})$.
-    *   The human processes this new context, updating their internal state $C_{	ext{cognitive}}$ (which might include frustration if the AI failed, or satisfaction if it succeeded).
-    *   The human samples an action: $a_{h} \sim P(	ext{action} \mid C_{t+1})$.
+    *   The AI outputs a response, which updates the shared context: $C_{t+1} = f(C_t, a_{\text{ai}})$.
+    *   The human processes this new context, updating their internal state $C_{\text{cognitive}}$ (which might include frustration if the AI failed, or satisfaction if it succeeded).
+    *   The human samples an action: $a_{h} \sim P(\text{action} \mid C_{t+1})$.
 
 7. Modern day's Fitts's Law
 
