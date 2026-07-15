@@ -70,7 +70,7 @@ then the essence of understanding human behavior—and designing systems for the
 
 Here is how we can break down this formulation:
 
-1. Deconstructing the "Context"
+## Deconstructing the "Context"
 
 The variable $\text{context}$ isn't just a static environment; it is a highly complex, multi-layered state vector. We can decompose it into:
 
@@ -78,14 +78,14 @@ The variable $\text{context}$ isn't just a static environment; it is a highly co
 *   **Internal State ($C_{int}$):** The user's latent variables—cognitive load, emotional state, fatigue, and long-term goals or intent.
 *   **Historical Context ($C_{hist}$):** The sequence of prior actions and outcomes. Humans are rarely memoryless; their current action is heavily conditioned on the trajectory that got them here ($P(\text{action}_t \mid \text{context}_t, \mathcal{H}_{\lt t})$).
 
-2. The Nature of the Mapping
+## The Nature of the Mapping
 
 If a user is a conditional distribution, how do they sample from it?
 
 *   **Bounded Rationality (Stochastic Policy):** Humans do not always play the absolute argmax (the single "best" utility-maximizing action). Instead, they sample stochastically. Factors like cognitive friction, distraction, or habit mean they might choose a sub-optimal action.
 *   **Active Inference:** From a cognitive science perspective, the user is constantly trying to minimize surprise (free energy). The "action" they take is an attempt to update the external context to match their internal expectations or desired goals.
 
-3. The AI (or the HCI)'s Role: Context Engineering
+## The AI (or the HCI)'s Role: Context Engineering
 
 When we build interactive AI, multi-agent systems, or tools, our goal is often to steer or assist the user. Since we cannot directly rewrite the user's internal policy $P$, our only lever is to manipulate the context we provide them.
 
