@@ -1,0 +1,102 @@
+<meta charset="utf-8" emacsmode="-*- markdown -*-">
+<script defer data-domain="minsukchang.com" src="https://plausible.io/js/plausible.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YN0PD1JCVL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YN0PD1JCVL');
+</script>
+<style>
+big { font-size: 300%; }
+.md .bib{padding-left:20px;text-indent:-20px;text-align:left}
+
+/* Improved readability styles */
+body {
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+    font-size: 18px; /* Slightly smaller base font for mobile balance */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* 2. ADD THESE FOR RESPONSIVE WIDTH */
+    width: auto;
+    overflow-wrap: break-word;
+}
+
+/* 3. ENSURE IMAGES DON'T OVERFLOW ON PHONES */
+.md img { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.md h1, .md h2, .md h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 600;
+}
+
+.md p {
+    margin-bottom: 1.2em;
+}
+.md img { display: block; margin-left: auto; margin-right: auto; }
+
+.md .longTOC, .md .mediumTOC, .md .shortTOC {
+    display: none;
+}
+
+/* 4. OPTIONAL: MEDIA QUERY FOR SMALL SCREENS */
+@media (max-width: 600px) {
+    body {
+        font-size: 17px;
+        padding: 15px;
+    }
+    big { font-size: 200%; }
+}
+
+</style>
+
+** K-AI의 생존법**
+
+반도체 산업은 이제 AI 모델과 하드웨어가 함께 발전하는 커스텀 칩(Custom Chip)과 최신 모델의 공진화(Co-evolution) 단계로 진입했다. 
+최신 AI 연구를 주도하며 하드웨어 요구사항을 스스로 정의하는 소프트웨어·알고리즘 기획력, 그리고 이를 칩 설계부터 제조·패키징까지 신속히 연결하는 공급망(Supply Chain) 집행력이 결합해야만 
+주도권을 잡을 수 있는 구조다.
+하지만 한국은 여전히 거창한 키워드만 되풀이하는 앵무새식 담론에 머물러 있다. 최상위 AI 기술을 이끌 연구/기획 역량도, 이를 받쳐줄 독자적 산업 생태계도 부재한 상황이다. 
+냉정하게 말해, 이대로라면 가장 잘 풀려도 빅테크가 시키는 대로 만들어주는 ‘단순 하청 생산지’로 전락할 가능성이 크다. 그마저도 여러가지 외부 요인들로 얼마나 경쟁력이 유지될지 불안한 상황이다.
+
+
+그렇다면 어디서 길을 찾아야 하는가?
+
+
+범용이 아닌 특화 영역(Vertical AI)의 커스텀 칩을 공략해야 한다. 엔비디아나 구글이 쥐고 있는 대규모 데이터센터용 칩 시장 대신, 온디바이스 AI, 자율주행, 정밀 의료, 로보틱스 등 특정 도메인에 특화된 NPU 및 Custom ASIC 생태계를 노리는 것이 현실적이다.
+가장 답답한 지점은 정부의 관료적 접근이다. 정부가 모여 회의하고 펀드를 조성한다고 해결될 문제가 아니라는 걸 알면서도 보여주기식 행정을 반복하고 있다. 
+하드웨어 수요를 견인하려면 ‘실제 AI 모델을 만들며 막대한 컴퓨팅 파워를 소모하는 주체’가 국내에 존재해야 한다. 기간을 정해두고 오디션 보듯 지원 대상을 뽑는 방식으로는 결코 풀 수 없다. 
+국내 팹리스가 최신 모델에 맞춘 커스텀 칩을 설계하고 실전 레퍼런스(Reference)를 쌓을 수 있도록, 수단과 방법을 가리지 않고 판을 깔아주어야 한다.
+
+
+전시성 육성책 대신 실질적인 인프라를 개방해야 한다. 국내 팹리스와 AI 스타트업이 마음껏 실험할 수 있도록 첨단 파운드리 시제품 제작(MPW) 비용을 파격적으로 지원하고, 
+초거대 데이터센터 인프라를 실체적으로 활용하게 해주는 것이 우선이다.
+무엇보다 치명적인 한계는 프론티어(Frontier) 레벨의 문제를 직접 겪고 해결해 본 리더십과 경험자의 부재다. AI 하드웨어든 최첨단 LLM이든, 프론티어 영역은 단순한 이론의 문제가 아니다. 
+가령, "수조 원을 태우며 수만 개의 칩을 연동할 때 터지는 예측 불가능한 병목과 실패를 직접 해결해 보았는가"라는 실전의 문제다. 
+국내에는 이런 거대한 시도도, 실패의 궤적도 없기에 시스템을 다뤄본 ‘생생한 삽질의 경험치’가 전무하다.경험자가 없다 보니 목표 설정부터 어그러진다.
+정작 중요한 인프라·시스템 관점의 뼈대 설계보다는 정량적인 보여주기식 성과 지표(KPI)에 몰두할 수밖에 없다.
+
+
+현실을 직시해야 한다. 해외 빅테크에서 프론티어 모델과 인프라, 커스텀 칩 프로젝트를 핵심에서 주도한 리더급 인재를 대거 영입하는 것은 사실상 불가능하다. 
+국가적 외교력 없이 빅테크 생태계 내부로 들어가 함께 시스템을 구축하는 것도 한계가 명확하다.
+결국 프론티어 스케일의 모델·인프라·칩 싸움에서는 빅테크를 이길 수 없음을 조용히 인정하는 것이 생존의 출발점이다. 
+거대 데이터센터용 칩 대신, 단일 칩·단일 박스의 완결성이 중요한 Edge AI, 특정 산업 전용 온디바이스 NPU, 로보틱스, 특수 도메인(의료·군사 등)처럼 
+스케일업 난이도는 낮으면서도 특화 알고리즘이 핵심이 되는 영역으로 조속히 판을 옮겨야 한다.
+
+
+
+
+---
+
+[← Back to Blog](index.html)
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
